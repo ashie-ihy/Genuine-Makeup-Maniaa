@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genuine Makeup Mania</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+    }
+    header {
+      background-color: #e75480;
+      color: white;
+      padding: 20px 10px;
+      position: relative;
+    }
+    header img {
+      width: 80px;
+      border-radius: 50%;
+      animation: spin 5s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    nav {
+      background-color: #f8c8dc;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e75480;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .product-card {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #e75480;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d6436b;
+    }
+    footer {
+      background-color: #e75480;
+      color: white;
+      padding: 20px 10px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .product-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+      nav a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo" />
+    <h1>Genuine Makeup Mania</h1>
+    <p>Your beauty, our passion.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Genuine Makeup Mania offers 100% authentic beauty products. From lips to lashes, we bring you the best from top brands with guaranteed quality and glam!</p>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <p>🎯 To change images, just replace the <code>src</code> link in the <strong>&lt;img&gt;</strong> tag below.</p>
+    <div class="product-gallery">
+      <div class="product-card">
+        <img src="lipstick.jpg" alt="Velvet Matte Lipstick" />
+        <h3>Velvet Matte Lipstick</h3>
+        <p>$14.99 – Rich, bold color that lasts all day.</p>
+      </div>
+      <div class="product-card">
+        <img src="foundation.jpg" alt="Flawless Foundation" />
+        <h3>Flawless Foundation</h3>
+        <p>$24.99 – Smooth, lightweight, full coverage.</p>
+      </div>
+      <div class="product-card">
+        <img src="eyeshadow.jpg" alt="Eyeshadow Palette" />
+        <h3>Glam Eyeshadow Palette</h3>
+        <p>$19.99 – 12 stunning shades for every occasion.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Genuine Makeup Mania</p>
+    <div class="socials">
+      <a href="https://instagram.com/genuinemakeupmania" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/genuinemakeupmania" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/5921234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
